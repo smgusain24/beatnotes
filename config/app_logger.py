@@ -1,5 +1,9 @@
 import logging
 from logging.config import dictConfig
+import os
+
+# Ensure the logs directory exists
+os.makedirs("logs", exist_ok=True)
 
 dictConfig(
     {
