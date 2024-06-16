@@ -53,4 +53,4 @@ class RedisCache:
         return self.redis_client.delete(key)
 
 
-redis_db = RedisCache(url='rediss://red-cpn68jmehbks7381vhm0:6RNCFFUDBssC7bkj5tdG5m41iiLjpyVT@singapore-redis.render.com:6379')
+redis_db = RedisCache(url=redis_url)
