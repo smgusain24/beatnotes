@@ -2,7 +2,7 @@ import json
 
 import redis
 from config.app_logger import logger
-from .aws import secrets
+from config.aws import secrets
 
 MINUTE = 60
 MONTHLY_TTL = 30 * 86400
@@ -53,4 +53,4 @@ class RedisCache:
         return self.redis_client.delete(key)
 
 
-redis_db = RedisCache(url=redis_url)
+redis_db = RedisCache(url='rediss://red-cpn68jmehbks7381vhm0:6RNCFFUDBssC7bkj5tdG5m41iiLjpyVT@singapore-redis.render.com:6379')
