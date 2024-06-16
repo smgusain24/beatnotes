@@ -22,6 +22,7 @@ dictConfig(
                 "maxBytes": 1000000,
                 "backupCount": 10,
                 "formatter": "default",
+                "encoding": "utf-8"
             }
         },
         "loggers": {
@@ -32,4 +33,5 @@ dictConfig(
         },
     }
 )
+
 logger = logging.getLogger("beatnotes")

@@ -2,7 +2,7 @@ import json
 
 import redis
 from config.app_logger import logger
-from .aws import secrets
+from config.aws import secrets
 
 MINUTE = 60
 MONTHLY_TTL = 30 * 86400
